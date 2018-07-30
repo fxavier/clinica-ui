@@ -1,0 +1,57 @@
+<div class="container">
+  <form autocomplete="off">
+    <div class="ui-g">
+      <div class="ui-g-6 ui-fluid">
+        <label>Nome do paciente</label>
+        <input pInputText type="text">
+      </div>
+      <div class="ui-g-3 ui-fluid">
+        <label>Data de Nascimento</label>
+        <p-calendar name="value" dateFormat="dd/mm/yy" [showIcon]="true"></p-calendar>
+      </div>
+      <div class="ui-g-3 ui-fluid">
+        <label>Abertura da ficha</label>
+        <p-calendar [showIcon]="true"></p-calendar>
+      </div>
+      <div class="ui-g-4 ui-fluid">
+        <label>Sexo</label>
+        <p-dropdown [options]="sexo" [autoWidth]="false"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-fluid">
+        <label>Nacionalidade</label>
+        <p-dropdown [options]="nacionalidades" [autoWidth]="false"></p-dropdown>
+      </div>
+      <div class="ui-g-4 ui-fluid">
+        <label>Estado civil</label>
+        <p-dropdown [options]="estadoCivil" [autoWidth]="false"></p-dropdown>
+      </div>
+      <div class="ui-g-6 ui-fluid">
+        <label>Tipo de documento de identificacao</label>
+        <p-dropdown [options]="tipoDocumento" [autoWidth]="false"></p-dropdown>
+      </div>
+      <div class="ui-g-6 ui-fluid">
+        <label>Numero do documento</label>
+        <input pInputText type="text">
+      </div>
+       <div class="ui-g-3 ui-fluid">
+         <label>Telefone</label>
+         <input pInputText type="text">
+       </div>
+       <div class="ui-g-3 ui-fluid">
+          <label>Celular</label>
+          <input pInputText type="text">
+      </div>
+      <div class="ui-g-6 ui-fluid">
+        <label>E-mail</label>
+        <input pInputText type="text">
+      </div>
+      <div class="ui-g-12 ui-fluid">
+        <label>Endereco</label>
+        <input pInputText type="text">
+      </div>
+    </div>
+    <div class="ui-g-12">
+      <button pButton type="submit" label="Gravar"></button>
+    </div>
+  </form>
+</div>
